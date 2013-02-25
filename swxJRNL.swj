@@ -10750,3 +10750,133 @@ Part.ActiveView().RotateAboutCenter 0, -0.00728184
 Part.Save2 FALSE
 Set Part = Nothing
 swApp.CloseDoc "Quick Release Fiber Holder V4.SLDASM"
+Set Part = swApp.OpenDoc6 ("C:\Documents and Settings\eng2\My Documents\GitHub\TransferFixture\Clamp.SLDASM", 2, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActivateDoc ("Clamp.SLDASM")
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.ActiveView().RotateAboutCenter -0.146303, -0.152919
+Part.ActiveView().RotateAboutCenter 0, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.0228598, -0.218455
+Part.ActiveView().RotateAboutCenter 0.0182879, -0.385937
+Part.ActiveView().RotateAboutCenter 0, -0.291273
+Part.ActiveView().RotateAboutCenter 0, -0.364092
+Part.ActiveView().RotateAboutCenter 0, -0.480601
+Part.ActiveView().RotateAboutCenter 0.00914393, -0.174764
+Part.ActiveView().RotateAboutCenter 0.0228598, -0.189328
+Part.ActiveView().RotateAboutCenter 0.0182879, -0.123791
+Part.ActiveView().RotateAboutCenter 0.0182879, -0.087382
+Part.ActiveView().RotateAboutCenter 0.0365757, -0.087382
+Part.ActiveView().RotateAboutCenter 0.0365757, -0.0655365
+Part.ActiveView().RotateAboutCenter 0.0457196, -0.0364092
+Part.ActiveView().RotateAboutCenter 0.0640075, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0457196, 0
+Part.ActiveView().RotateAboutCenter 0.0365757, 0.0145637
+Part.ActiveView().RotateAboutCenter 0.0228598, 0.0364092
+Part.ActiveView().RotateAboutCenter 0, 0.19661
+Part.ActiveView().RotateAboutCenter 0, 0.43691
+Part.ActiveView().RotateAboutCenter 0, 0.538856
+Part.ActiveView().RotateAboutCenter -0.0274318, 0.750029
+Part.ActiveView().RotateAboutCenter -0.0685795, 0.538856
+Part.ActiveView().RotateAboutCenter -0.0502916, 0.334965
+Part.ActiveView().RotateAboutCenter -0.0411477, 0.174764
+Part.ActiveView().RotateAboutCenter -0.00914393, 0.0364092
+Part.ActiveView().RotateAboutCenter 0.0137159, 0.0364092
+Part.ActiveView().RotateAboutCenter 0.0960113, 0.0509729
+Part.ActiveView().RotateAboutCenter 0.0502916, 0
+Part.ActiveView().RotateAboutCenter 0.0365757, -0.043691
+Part.ActiveView().RotateAboutCenter 0.0274318, -0.0728184
+Part.ActiveView().RotateAboutCenter 0.00457196, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.00457196, -0.0218455
+Part.ActiveView().RotateAboutCenter 0, -0.00728184
+Part.ActiveView().RotateAboutCenter 0, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.00457196, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0182879, -0.182046
+Part.ActiveView().RotateAboutCenter 0.0137159, -0.101946
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.007406077873327, 0.009171217492323, 0.007554482924547, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.006848764008396, 0.007270848560097, 0.001161761558137, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Axis1@180 TORSION SPRING (MC9271K78)-1@Clamp", "AXIS", 0.002354196178977, 0.00455397567603, -0.01151741470024, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.006510853516716, 0.007781436464683, 0.0008850292921352, False, 0, Nothing)
+Part.OpenCompFile
+swApp.LoadFile2 "C:\Documents and Settings\eng2\My Documents\GitHub\TransferFixture\Clamp Shaft.SLDPRT", ""
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc6 ("C:\Documents and Settings\eng2\My Documents\GitHub\TransferFixture\Clamp Shaft.SLDPRT", 1, 0, "", longstatus, longwarnings)
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Set Part = swApp.ActivateDoc ("Clamp Shaft.SLDPRT")
+Part.ClearSelection2 True
+swApp.ActiveDoc.ActiveView.FrameState = 1
+boolstatus = Part.Extension.SelectByID("", "EDGE", 0.005914522309126, 0.0004586738342596, 0.0009890733531961, True, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.006096000000014, 1.808925867408e-005, 6.422723026844e-005, True, 0, Nothing)
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID("Extrude1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing)
+Part.ActivateSelectedFeature
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.0116492, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.0582547
+Part.ActiveView().RotateAboutCenter 0.00388308, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.0232985, -0.0728184
+Part.ActiveView().RotateAboutCenter 0.0116492, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.0155323, -0.0582547
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0582547
+Part.ActiveView().RotateAboutCenter 0.0116492, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0582547
+Part.ActiveView().RotateAboutCenter 0.0155323, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0388308, -0.0655365
+Part.ActiveView().RotateAboutCenter 0.0155323, -0.0291273
+Part.ActiveView().RotateAboutCenter 0.0388308, -0.043691
+Part.ActiveView().RotateAboutCenter 0.0155323, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.0271815, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0116492, 0
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0218455
+Part.ActiveView().RotateAboutCenter 0.0116492, 0
+Part.ActiveView().RotateAboutCenter 0.00388308, 0
+Part.ActiveView().RotateAboutCenter 0.00388308, 0
+Part.ActiveView().RotateAboutCenter 0.0155323, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.00776615, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.0194154, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0194154, 0
+Part.ActiveView().RotateAboutCenter 0.00388308, 0
+Part.ActiveView().RotateAboutCenter 0.00388308, 0
+Part.ActiveView().RotateAboutCenter 0.0116492, 0
+Part.ActiveView().RotateAboutCenter 0.0155323, 0
+Part.ActiveView().RotateAboutCenter 0.0194154, 0.00728184
+Part.ActiveView().RotateAboutCenter 0.00776615, 0
+Part.ActiveView().RotateAboutCenter 0.0116492, 0.00728184
+Part.ActiveView().RotateAboutCenter 0.00388308, 0
+Part.ActiveView().RotateAboutCenter 0.00388308, 0.00728184
+Part.ActiveView().RotateAboutCenter 0, 0.00728184
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "Clamp Shaft.SLDPRT"
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Set Part = swApp.ActivateDoc ("Clamp.SLDASM")
+swApp.ActiveDoc.ActiveView.FrameState = 1
+' MSGBOX
+' C:\Documents and Settings\eng2\My Documents\GitHub\TransferFixture\Clamp.SLDASM has not been rebuilt successfully since the last feature change or an externally referenced model has changed.
+' 	It is safest to rebuild before saving.
+' 		Rebuild now?
+
+Part.Save2 FALSE
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ExitApp
+End Sub
