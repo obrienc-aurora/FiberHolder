@@ -1,0 +1,215 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 02/26/13 by eng2
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc6 ("C:\Documents and Settings\eng2\My Documents\GitHub\FiberHolder\Quick Release Fiber Holder V4.SLDASM", 2, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActivateDoc ("Quick Release Fiber Holder V4.SLDASM")
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+boolstatus = Part.Extension.SelectByID("Fiber Axis@Base-1@Quick Release Fiber Holder V4", "AXIS", -0.0004940098556681, -0.02750934606484, -0.006945693354634, False, 0, Nothing)
+Part.BlankRefGeom
+Part.ShowNamedView2 "*Right", 4
+Part.ShowNamedView2 "*Left", 3
+Part.ShowNamedView2 "*Back", 2
+Part.ShowNamedView2 "*Front", 1
+Part.ShowNamedView2 "*Left", 3
+Part.ShowNamedView2 "*Bottom", 6
+' MSGBOX
+' Changing this standard view will change the orientation of any
+'  standard orthogonal, named and child views in drawings of this model.
+' Do you want to make this change?
+
+Part.ShowNamedView2 "*Front", 1
+Part.ShowNamedView2 "*Back", 2
+Part.ShowNamedView2 "*Left", 3
+Part.ShowNamedView2 "*Right", 4
+Part.ShowNamedView2 "*Top", 5
+Part.ShowNamedView2 "*Bottom", 6
+Part.ShowNamedView2 "*Isometric", 7
+Part.SetPickMode
+Part.SetPickMode
+' MSGBOX
+' Some of the models referenced in this document have been modified.  They must be saved when the document is saved.
+' 		Save the document and the referenced models now?
+
+Part.SaveAs2 "C:\Documents and Settings\eng2\Desktop\fiber holder-basic.JPG", 0, TRUE, FALSE
+Part.ActiveView().RotateAboutCenter 0.00451564, 0.0145637
+Part.ActiveView().RotateAboutCenter 0.049672, 0.174764
+Part.ActiveView().RotateAboutCenter 0.230297, 0.589829
+Part.ActiveView().RotateAboutCenter 0.347704, 0.801002
+Part.ActiveView().RotateAboutCenter 0.234813, 0.19661
+Part.ActiveView().RotateAboutCenter 0.130953, 0.0291273
+Part.ActiveView().RotateAboutCenter 0.0677345, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.0632189, -0.0364092
+Part.ActiveView().RotateAboutCenter 0.0451564, -0.043691
+Part.ActiveView().RotateAboutCenter 0.0180625, -0.0218455
+Part.ActiveView().RotateAboutCenter 0, -0.0801002
+Part.ActiveView().RotateAboutCenter -0.0135469, -0.145637
+Part.ActiveView().RotateAboutCenter -0.0316095, -0.167482
+Part.ActiveView().RotateAboutCenter -0.0180625, -0.0801002
+Part.ActiveView().RotateAboutCenter -0.0270938, -0.0582547
+Part.ActiveView().RotateAboutCenter -0.00451564, 0
+Part.ActiveView().RotateAboutCenter -0.00451564, 0
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.006697796003891, 0.001725710287275, 0.007111881700439, False, 0, Nothing)
+Part.TranslateComponent
+Part.EditCopy
+Part.ClearSelection2 True
+Part.Paste
+' MSGBOX
+' The item on the clipboard cannot be pasted here.
+
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.006404747814486, 0.001806927804324, 0.007111893705883, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.006404747814486, 0.001806927804324, 0.007111893705883, False, 0, Nothing)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Extrude1@MAGNET(125X125X062)-1@Quick Release Fiber Holder V4", "SOLIDBODY", 0.00698531240397, 0.002129257048551, 0.006101521437017, False, 0, Nothing)
+Part.EditCopy
+' MSGBOX
+' This item cannot be copied to the clipboard.
+
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID("Body-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("MAGNET(125X125X062)-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("MAGNET(125X125X062)-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.EditSuppress
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005397770167349, 0.001150724942988, 0.005070587131002, False, 0, Nothing)
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005448344131423, 0.001101177526607, 0.004943391020163, False, 0, Nothing)
+Part.EditPart
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005452502431353, 0.001361021573018, 0.005472838051048, False, 0, Nothing)
+Part.EditSuppress
+Part.ClearSelection2 True
+Part.EditAssembly
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005397500000015, -0.004876601256115, 0.005510167601585, False, 0, Nothing)
+Part.EditPart
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("", "EDGE", 0.005362119983374, -0.004269653732507, 0.003168214360073, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005397500000072, -0.004320855027544, 0.005105630153594, False, 0, Nothing)
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005430367568636, -0.004465571186586, 0.004881641427005, False, 0, Nothing)
+Part.RotateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.00547713869139, -0.004466432834562, 0.005075098303848, False, 0, Nothing)
+Part.EditSuppress
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+Part.EditAssembly
+Part.SetPickMode
+Part.SetPickMode
+Part.ShowNamedView2 "*Front", 1
+Part.ShowNamedView2 "*Back", 2
+Part.ShowNamedView2 "*Left", 3
+Part.ShowNamedView2 "*Right", 4
+Part.ShowNamedView2 "*Top", 5
+Part.ShowNamedView2 "*Bottom", 6
+Part.ShowNamedView2 "*Bottom", 6
+Part.ShowNamedView2 "*Isometric", 7
+Part.SetPickMode
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.004855997491745, 0.002027947472129, 0.006488795677683, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.005362461256709, -0.004289542613947, 0.00709391886096, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.001409010548059, 0.001903019154213, 0.003301999999962, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.0002481775764522, 0.00846492674242, 0.003301999999962, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.001002897880767, -0.01272489957796, 0.003301999999906, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.001409396887254, -0.0008230388910988, 0.003301999999906, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.0006941935320697, 0.008111260176804, 0.003301999999962, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.01075785379038, 0.008898603188527, 0.008311115191589, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.001187051124475, 0.001378608224627, 0.001396445567764, False, 0, Nothing)
+Part.HideComponent2
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("", "FACE", -0.008254999999906, 0.004316574842903, -0.001140150617061, False, 0, Nothing)
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.EditRebuild
+boolstatus = Part.Extension.SelectByID("Base-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Base-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Outer Clamp-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Outer Clamp Latch-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Inner Clamp Latch-2@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Inner Clamp-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.SetPickMode
+Part.EditUndo 1
+Part.EditUndo 1
+Part.EditUndo 1
+Part.EditUndo 1
+Part.EditUndo 1
+Part.ViewOrientationUndo
+Part.ViewOrientationUndo
+Part.ShowNamedView2 "*Bottom", 6
+Part.ActiveView().RotateAboutCenter 0.0270938, -0.0145637
+Part.ActiveView().RotateAboutCenter 0.212235, -0.109228
+Part.ActiveView().RotateAboutCenter 0.361251, -0.174764
+Part.ActiveView().RotateAboutCenter 0.307063, -0.167482
+Part.ActiveView().RotateAboutCenter 0.35222, -0.291273
+Part.ActiveView().RotateAboutCenter 0.117407, -0.145637
+Part.ActiveView().RotateAboutCenter 0.00451564, -0.00728184
+Part.ActiveView().RotateAboutCenter 0.00451564, -0.00728184
+Part.ShowNamedView2 "*Top", 5
+Part.ShowNamedView2 "*Bottom", 6
+Part.ShowNamedView2 "*Isometric", 7
+boolstatus = Part.Extension.SelectByID("Inner Clamp Latch-2@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Inner Clamp-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Outer Clamp-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Inner Clamp-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Base-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Base-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Inner Clamp Latch-2@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID("Outer Clamp Latch-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Inner Clamp Latch-2@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+boolstatus = Part.Extension.SelectByID("Outer Clamp Latch-1@Quick Release Fiber Holder V4", "COMPONENT", 0, 0, 0, False, 0, Nothing)
+Part.ClearSelection2 True
+' MSGBOX
+' Some of the models referenced in this document have been modified.  They must be saved when the document is saved.
+' 		Save the document and the referenced models now?
+
+Part.Save2 FALSE
+boolstatus = Part.Extension.SelectByID("", "EDGE", -0.01180586914734, 0.002357114300764, 0.01095407114127, False, 0, Nothing)
+Part.TranslateComponent
+' MSGBOX
+' Quick Release Fiber Holder V4 has not been rebuilt successfully since the last feature change or an externally referenced model has changed.
+' 	It is safest to rebuild before saving.
+' 		Rebuild now?
+
+Part.SaveAs2 "C:\Documents and Settings\eng2\Desktop\fiber holder-basic.jpg", 0, TRUE, FALSE
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.Save2 FALSE
+Part.ClearSelection2 True
+swApp.ExitApp
+End Sub
