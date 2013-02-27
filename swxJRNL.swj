@@ -1263,3 +1263,8 @@ Part.EditSuppress
 Part.ClearSelection2 True
 Part.ViewZoomtofit2
 Part.SaveAs2 "C:\Documents and Settings\eng2\Desktop\transfer fixture-splicer.jpg", 0, TRUE, FALSE
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.Save2 FALSE
+Part.ClearSelection2 True
+swApp.ExitApp
+End Sub
